@@ -25,7 +25,7 @@ const start = async () => {
       useUnifiedTopology: true
     });
     app.listen(PORT, () => console.log(`Server started on PORT = ${PORT}`));
-  } catch {
+  } catch (e) {
     console.log(e);
   }
 }
