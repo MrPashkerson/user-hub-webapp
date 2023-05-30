@@ -20,7 +20,7 @@ class UserService {
 
     return {
       ...tokens,
-      user: UserDto
+      user: userDto
     }
   }
 
@@ -43,7 +43,7 @@ class UserService {
     await tokenService.saveToken(userDto.id, tokens.refreshToken);
     return {
       ...tokens,
-      user: UserDto
+      user: userDto
     }
   }
 
@@ -66,7 +66,7 @@ class UserService {
     await tokenService.saveToken(userDto.id, tokens.refreshToken);
     return {
       ...tokens,
-      user: UserDto
+      user: userDto
     }
   }
 
